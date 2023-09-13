@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+  <section class="showcase-wrapper">
+        <div class="showcase">
+          <h1 class="showcase-heading">
+           @Model.Value("showcaseHeading")
+          </h1>
+          <p class="showcase-paragraph">
+            @Model.Value("showcaseParagraph")
+          </p>
+          <img
+            class="showcase-img"
+            src="@Model.Value("showcaseImage")"
+            alt="Picture of two consultants"
+          />
+        </div>
+      </section>
