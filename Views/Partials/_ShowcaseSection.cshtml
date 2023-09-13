@@ -1,17 +1,22 @@
-﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 
   <section class="showcase-wrapper">
-        <div class="showcase">
+      <div class="showcase">
           <h1 class="showcase-heading">
-           @Model.Value("showcaseHeading")
+              @Model.Value("showcaseHeading")
           </h1>
           <p class="showcase-paragraph">
-            @Model.Value("showcaseParagraph")
+              @Model.Value("showcaseParagraph")
           </p>
-          <img
-            class="showcase-img"
-            src="@Model.Value("showcaseImage")"
-            alt="Picture of two consultants"
-          />
-        </div>
+
+         @{
+          var image = Model.Value<MediaWithCrops>("showcaseImage");
+          if (image != null)
+          {
+            <img src="@image.Url()" alt="A picture of two consultants" />
+          }
+         }
+
+      </div>
       </section>
