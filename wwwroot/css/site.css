@@ -11,9 +11,11 @@ main {
     flex: 1;
 }
 
+/* FOOTER*/
+
 .footer {
     display: flex;
-    background-color: rgb(53, 50, 50);
+    background-color: rgb(34, 19, 88);
     color: whitesmoke;
 }
 
@@ -79,13 +81,13 @@ main {
 /* BLOG*/
 
 .blog-section {
-background-color: grey;
+background-color: rgb(34, 19, 88);
 padding: 1rem;
 }
 
 
 .blog-wrapper {
-    background-color: grey;
+    background-color: rgb(34, 19, 88);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -179,7 +181,7 @@ padding: 1rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(34, 19, 88);
 }
 
 .why-choose-us-img {
@@ -228,7 +230,7 @@ padding: 1rem;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(34, 19, 88);
     color: white;
 }
 
@@ -245,7 +247,7 @@ padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(34, 19, 88);
     color: white;
 }
 
@@ -272,7 +274,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(35, 33, 33);
+    background-color: rgb(34, 19, 88);
     color: whitesmoke;
 }
 
@@ -301,7 +303,7 @@ display: flex;
 /*NEWS PAGE*/
 
 .navigationelement {
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(34, 19, 88);
     color: whitesmoke;
     margin-bottom: 4rem;
 }
@@ -321,7 +323,7 @@ justify-content: space-around;
 
 .nav-item {
     margin: 1rem;
-    color: goldenrod;
+    color: white;
 }
 
 .nav-item:hover {
@@ -430,7 +432,7 @@ justify-content: space-around;
 }
 
 .form-wrapper {
-    background-color: rgba(128, 128, 128, 0.388);
+    background-color: rgb(34, 19, 88);
     width: 68vw;
     display: flex;
     flex-direction: column;
