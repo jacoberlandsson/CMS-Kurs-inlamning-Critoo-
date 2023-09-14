@@ -304,8 +304,10 @@ display: flex;
 
 .navigationelement {
     background-color: rgb(34, 19, 88);
-    color: whitesmoke;
-    margin-bottom: 4rem;
+    color: white;
+    padding: 1rem;
+    border-bottom: 2px solid white;
+    font-size: 1.5rem;
 }
 
 
@@ -327,13 +329,16 @@ justify-content: space-around;
 }
 
 .nav-item:hover {
-    color: silver;
+    color: grey;
     cursor: pointer;
-    text-decoration: underline;
+    
 }
 
 .nav-button {
-    max-height: 30px;
+    background-color: rgb(34, 19, 88);
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
     margin: 10px;
 }
 .news-heading-wrapper {
