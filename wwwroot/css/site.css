@@ -1,531 +1,546 @@
-        body {
-        background-color: rgb(240, 239, 234);
-       }
-       
-       .wrapper {
-           height: 100dvh;
-           display: flex;
-           flex-direction: column;
-       }
-       
-       main {
-           flex: 1;
-       }
-       
+body {
+    background-color: rgb(240, 239, 234);
+   }
+   
+   .wrapper {
+       height: 100dvh;
+       display: flex;
+       flex-direction: column;
+   }
+   
+   main {
+       flex: 1;
+   }
+   
 
-        /* FOOTER*/
+    /* FOOTER*/
 
-        .wrapper {
-            height: 100dvh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        main {
-            flex: 1;
-        }
-        
-        /* FOOTER*/
-        
-        .footer {
-            display: flex;
-            background-color: rgb(34, 19, 88);
-            color: whitesmoke;
-            margin-top: 8rem;
-            width: 100%;
-        }
-        
-        .footer-paragraph {
-            width: 50vw;
-            margin: 1rem;
-        }
-        
-        .footer-list-item {
-            list-style-type: none;
-            margin: 0;
-        }
-        
-        .footer-list-item:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        
-        .footer-list-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          
-        }
-        
-        .footer-lists-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 1rem;
-        }
-        
-        /* END FOOTER*/
-        
-        /* NEWSLETTER */
-        .newsletter-wrapper {
-            display: flex;
-            background-color: rgb(184, 198, 184);
-            height: 25vh;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
-        
-        .button {
-            margin: 2rem;
-            background-color: goldenrod;
-            border-radius: 1rem;
-            padding: 0.4rem;
-            border: none;
-        }
-        
-        .input {
-            border-radius: 1rem;
-            padding: 0.3rem;
-            border: none;
-        }
-        
-        
-        
-        /* NEWSLETTER END*/
-        
-        /* BLOG*/
-        
-        .blog-section {
-        background-color: rgb(34, 19, 88);
-        padding: 1rem;
-        }
-        
-        
-        .blog-wrapper {
-            background-color: rgb(34, 19, 88);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        
-        
-        /* BLOG END */
-        
-        /* TEAM MEMBERS*/
-        
-        .container-team {
-            background-color: rgb(241, 184, 105);
-            padding: 2rem;
-        }
-        
-        .team-wrapper {
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .team-member-img {
-           margin: 1rem;
-        }
-        
-        .review-wrapper {
-            display: flex;
-            justify-content: center;
-            margin: 2rem;
-        }
-        
-        .review {
-            width: 80%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .client-testimonial-wrapper {
-            display: flex;
-            flex-direction: row;
-            padding: 2rem;
-        }
-        
-        .client-testimonial {
-            width: 20vw;
-            padding: 2rem;
-        }
-        
-        /* TEAM MEMBERS END*/
-        
-        /* PROJECTS*/
-        
-        .topic-center {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .heading-center {
-            text-align: center;
-        }
-        
-        .projects-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .projects-wrapper {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 5rem;
-            margin: 1rem;
-        }
-        
-        
-        
-        .project-title {
-            margin-bottom: 5rem;
-        }
-        /* PROJECTS END*/
-        
-        /* WHY CHOOSE US*/
-        
-        .why-choose-us-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgb(34, 19, 88);
-        }
-        
-        .why-choose-us-img {
-            margin-right: 15rem;
-        }
-        
-        .why-choose-us-list {
-            width: 30vw;
-            font-size: 2rem;
-            color: whitesmoke;
-        }
-        
-        /* WHY CHOOSE US END*/
-        
-        /*OUR SERVICE*/
-        
-        .services-section {
-            background-color: grey;
-            padding: 5rem;
-            
-            
-        }
-        
-        .our-services-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-           
-        }
-        
-        .service-we-provide {
-            width: 15vw;
-            background-color: whitesmoke;
-            padding: 2rem;
-            margin: 1rem;
-        }
-        
-        
-        /*OUR SERVICE END*/
-        
-        
-        /*ABOUT US*/
-        .about-us-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgb(0, 0, 0);
-            color: white;
-        }
-        
-        .about-us-description {
-            width: 40vw;
-        }
-        
-        /*ABOUT US END*/
-        
-        
-        /*FEATURES*/
-        
-        .features-wrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            background-color: (255, 255, 255);
-            color: black;
-        }
-        
-        .features-headings {
-            width: 20vw;
-        
-        }
-        
-        .features-container {
-        width: 40vw;
+    .wrapper {
+        height: 100dvh;
         display: flex;
-        }
-        
-        .features {
-            width: 12vw;
-            margin: 1rem;
-        }
-        
-        /*FEATURES END*/
-        
-        /*SHOWCASE, HERO */
-        
-        
-        .showcase {
-            position: relative;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
+        flex-direction: column;
+    }
+    
+    main {
+        flex: 1;
+    }
+    
+    /* FOOTER*/
+    
+    .footer {
+        display: flex;
+        background-color: black;
+        color: whitesmoke;
+        margin-top: 8rem;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
 
-        .showcase > img {
-            max-width: 100%;
-            height: auto;
-            position: absolute;
-            right: 100px;
-            top: 25px;
-            margin-bottom: 3rem;
-        }
-        
-        
-        
-        .showcase-heading {
-            font-size: 4rem;
-            position: absolute;
-            top: 200px;
-            left: 50px;
-            width: 30vw;
+    .footer-logo {
+       margin-bottom: 1rem;
+    }
 
-        }
+    .footer-paragraph {
+        width: 20vw;
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-list-item {
+        margin-bottom: 0.6rem;
+        list-style-type: none;
         
-        .showcase-paragraph {
-            font-size: 1rem;
-            position: absolute;
-            top: 450px;
-            left: 50px;
-        }
-        
-        /*SHOWCASE, HERO END*/
-        
-        
-        
-        /*NEWS PAGE*/
+    }
+    
+    .footer-list-item:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .footer-list-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 3rem;
+      
+    }
 
-        .navigation-section {
-            background-color: rgb(240, 239, 234);
-            color: black;
-            margin-left: 10%;
-            margin-right: 10%;
-            
-        }
-
-        .nav-container {
-            display: flex;
-        }
-
-        .logo {
-           margin: 1rem;
-        }
+    .footer-heading {
+        margin-bottom: 3rem;
+    }
+    
+    .footer-lists-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    /* END FOOTER*/
+    
+    /* NEWSLETTER */
+    .newsletter-wrapper {
+        display: flex;
+        background-color: rgb(184, 198, 184);
+        height: 25vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .button {
+        margin: 2rem;
+        background-color: goldenrod;
+        border-radius: 1rem;
+        padding: 0.4rem;
+        border: none;
+    }
+    
+    .input {
+        border-radius: 1rem;
+        padding: 0.3rem;
+        border: none;
+    }
+    
+    
+    
+    /* NEWSLETTER END*/
+    
+    /* BLOG*/
+    
+    .blog-section {
+    background-color: rgb(34, 19, 88);
+    padding: 1rem;
+    }
+    
+    
+    .blog-wrapper {
+        background-color: rgb(34, 19, 88);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    
+    /* BLOG END */
+    
+    /* TEAM MEMBERS*/
+    
+    .container-team {
+        background-color: rgb(241, 184, 105);
+        padding: 2rem;
+    }
+    
+    .team-wrapper {
         
-        .first-from-top {
-            display: flex;
-            color: rgb(150, 149, 144);
-            border-bottom: 1px solid rgb(150, 149, 144);
-        }
-
-        .first-from-top > span {
-            color: rgb(150, 149, 144);
-        }
-
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .team-member-img {
+       margin: 1rem;
+    }
+    
+    .review-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    
+    .review {
+        width: 80%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .client-testimonial-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+    }
+    
+    .client-testimonial {
+        width: 20vw;
+        padding: 2rem;
+    }
+    
+    /* TEAM MEMBERS END*/
+    
+    /* PROJECTS*/
+    
+    .topic-center {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .heading-center {
+        text-align: center;
+    }
+    
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        margin: 1rem;
+    }
+    
+    
+    
+    .project-title {
+        margin-bottom: 5rem;
+    }
+    /* PROJECTS END*/
+    
+    /* WHY CHOOSE US*/
+    
+    .why-choose-us-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(34, 19, 88);
+    }
+    
+    .why-choose-us-img {
+        margin-right: 15rem;
+    }
+    
+    .why-choose-us-list {
+        width: 30vw;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+    
+    /* WHY CHOOSE US END*/
+    
+    /*OUR SERVICE*/
+    
+    .services-section {
+        background-color: grey;
+        padding: 5rem;
+        
+        
+    }
+    
+    .our-services-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
        
-        
-        .second-from-top {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 3rem;
-        }
+    }
+    
+    .service-we-provide {
+        width: 15vw;
+        background-color: whitesmoke;
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    
+    /*OUR SERVICE END*/
+    
+    
+    /*ABOUT US*/
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    .about-us-description {
+        width: 40vw;
+    }
+    
+    /*ABOUT US END*/
+    
+    
+    /*FEATURES*/
+    
+    .features-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: (255, 255, 255);
+        color: black;
+    }
+    
+    .features-headings {
+        width: 20vw;
+    
+    }
+    
+    .features-container {
+    width: 40vw;
+    display: flex;
+    }
+    
+    .features {
+        width: 12vw;
+        margin: 1rem;
+    }
+    
+    /*FEATURES END*/
+    
+    /*SHOWCASE, HERO */
+    
+    
+    .showcase {
+        position: relative;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
+    .showcase > img {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        right: 100px;
+        top: 25px;
+        margin-bottom: 3rem;
+    }
+    
+    
+    
+    .showcase-heading {
+        font-size: 4rem;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        width: 30vw;
+
+    }
+    
+    .showcase-paragraph {
+        font-size: 1rem;
+        position: absolute;
+        top: 450px;
+        left: 50px;
+    }
+    
+    /*SHOWCASE, HERO END*/
+    
+    
+    
+    /*NEWS PAGE*/
+
+    .navigation-section {
+        background-color: rgb(240, 239, 234);
+        color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .logo {
+       margin: 1rem;
+    }
+    
+    .first-from-top {
+        display: flex;
+        color: rgb(150, 149, 144);
+        border-bottom: 1px solid rgb(150, 149, 144);
+    }
+
+    .first-from-top > span {
+        color: rgb(150, 149, 144);
+    }
+
+   
+    
+    .second-from-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3rem;
+    }
+
+   
+
+    .navigation > a {
+        margin: 1.5rem;
+    }
+
+    .contact-company-social-media {
+        position: absolute;
+        right: 120px;
+        top: 10px;
+    }
+
+    .login {
+        padding: 0.7rem;
+        background-color: rgb(250, 215, 129);
+        color: black;
+        text-decoration: none;
+        border-radius: 20px;
+        height: 50px;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        right: 90px;
+        top: 40px;
+        
+    }
+    
+    
+    
+    
+  /* NEWS PAGE */
+
+    .news-heading-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
        
-
-        .navigation > a {
-            margin: 1.5rem;
-        }
-
-        .contact-company-social-media {
-            position: absolute;
-            right: 120px;
-            top: 10px;
-        }
-
-        .login {
-            padding: 0.7rem;
-            background-color: rgb(250, 215, 129);
-            color: black;
-            text-decoration: none;
-            border-radius: 20px;
-            height: 50px;
-            width: 5rem;
-            text-align: center;
-            cursor: pointer;
-            position: absolute;
-            right: 90px;
-            top: 40px;
-            
-        }
-        
-        
-        
-        
-      /* NEWS PAGE */
-
-        .news-heading-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-        }
-        
-        .news-heading {
-            margin: 4rem;
-        }
-        
-        .news-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 5%;
-        }
-        
-        .news {
-            width: 26vw;
-            margin: 1rem;
-        }
-        /*NEWS PAGE END*/
-        
-        /*NEWS DETAILS*/
-        
-        .news-details-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-           
-        }
-        
-        .details-info-wrapper {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .full-article {
-            width: 40vw;
-        }
-        
-        .navigate-to-other-articles {
-            width: 20vw;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid black;
-        }
-        
-        .categories {
-            border: 1px solid black;
-        }
-        
-        .recent-posts {
-           
-            border: 1px solid black;
-        }
-        
-        .details-info {
-            margin: 1rem;
-        }
-        
-        /*NEWS DETAILS END*/
-        
-        
-        /*CONTACT*/
-        
-        
-        .contact-point-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        
-        .contact-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-         
-        }
-        
-        .contact-point {
-            width: 21vw;
-            padding: 1rem;
-            border: 1px solid black;
-            margin: 1rem;
-        }
-        
-        .form-section-contact {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        
-        }
-        
-        .form-wrapper {
-            background-color: rgb(34, 19, 88);
-            width: 68vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 4rem;
-            align-items: center;
-            padding: 2rem;
-        }
-        
-        .contact-form {
-            padding: 3rem;
-        }
-        
-        
-        
-        .input-contact, .textarea-contact {
-            width: 50vw;
-            border-radius: 1rem;
-            border: none;
-        }
-        
-        .input-contact {
-            height: 35px;
-        }
-        
-        .textarea-contact {
-            height: 100px;
-        }
-        /*CONTACT END*/
-        
-        
-        
-        
-        
-        
-        
-        /* ÖVRIGT*/
+    }
+    
+    .news-heading {
+        margin: 4rem;
+    }
+    
+    .news-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5%;
+    }
+    
+    .news {
+        width: 26vw;
+        margin: 1rem;
+    }
+    /*NEWS PAGE END*/
+    
+    /*NEWS DETAILS*/
+    
+    .news-details-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
        
+    }
+    
+    .details-info-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .full-article {
+        width: 40vw;
+    }
+    
+    .navigate-to-other-articles {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    
+    .categories {
+        border: 1px solid black;
+    }
+    
+    .recent-posts {
+       
+        border: 1px solid black;
+    }
+    
+    .details-info {
+        margin: 1rem;
+    }
+    
+    /*NEWS DETAILS END*/
+    
+    
+    /*CONTACT*/
+    
+    
+    .contact-point-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     
+    }
+    
+    .contact-point {
+        width: 21vw;
+        padding: 1rem;
+        border: 1px solid black;
+        margin: 1rem;
+    }
+    
+    .form-section-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    
+    .form-wrapper {
+        background-color: rgb(34, 19, 88);
+        width: 68vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4rem;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .contact-form {
+        padding: 3rem;
+    }
+    
+    
+    
+    .input-contact, .textarea-contact {
+        width: 50vw;
+        border-radius: 1rem;
+        border: none;
+    }
+    
+    .input-contact {
+        height: 35px;
+    }
+    
+    .textarea-contact {
+        height: 100px;
+    }
+    /*CONTACT END*/
+    
+    
+    
+    
+    
+    
+    
+    /* ÖVRIGT*/
+   
