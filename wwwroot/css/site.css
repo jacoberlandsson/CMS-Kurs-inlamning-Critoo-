@@ -339,7 +339,7 @@ body {
     
     
     
-    /*NEWS PAGE*/
+    /*NAVIGATION*/
 
     .navigation-section {
         background-color: rgb(240, 239, 234);
@@ -403,28 +403,36 @@ body {
         top: 40px;
         
     }
+     /*NAVIGATION END */
     
     
     
-    
-  /* NEWS PAGE */
+ /* NEWS PAGE */
 
-    .news-heading-wrapper {
+    .news-page-heading {
         display: flex;
         justify-content: center;
         align-items: center;
-       
-    }
-    
-    .news-heading {
         margin: 4rem;
     }
     
+    .news-section-heading {
+        margin-left: 10%;
+    }
+    
+    .news-section-wrapper {
+        display: flex;
+        flex-direction: column;
+
+      
+    }
+
     .news-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     
     .news {
