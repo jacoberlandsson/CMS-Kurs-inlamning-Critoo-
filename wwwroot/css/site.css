@@ -1,6 +1,17 @@
-       body {
+        body {
         background-color: rgb(240, 239, 234);
        }
+       
+       .wrapper {
+           height: 100dvh;
+           display: flex;
+           flex-direction: column;
+       }
+       
+       main {
+           flex: 1;
+       }
+       
 
         /* FOOTER*/
 
@@ -20,6 +31,8 @@
             display: flex;
             background-color: rgb(34, 19, 88);
             color: whitesmoke;
+            margin-top: 8rem;
+            width: 100%;
         }
         
         .footer-paragraph {
@@ -273,30 +286,38 @@
         
         /*SHOWCASE, HERO */
         
-        .showcase-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgb(240, 239, 234);
-            color: black;
-        }
         
         .showcase {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            position: relative;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .showcase > img {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            right: 100px;
+            top: 25px;
+            margin-bottom: 3rem;
         }
         
-        .showcase-img {
-            margin: 3rem;
-        }
+        
         
         .showcase-heading {
-            font-size: 3rem;
+            font-size: 4rem;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 30vw;
+
         }
         
         .showcase-paragraph {
             font-size: 1rem;
+            position: absolute;
+            top: 450px;
+            left: 50px;
         }
         
         /*SHOWCASE, HERO END*/
