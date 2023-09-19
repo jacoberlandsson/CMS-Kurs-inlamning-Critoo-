@@ -560,7 +560,15 @@ body {
     /*CONTACT END*/
     
     
-    
+    /*BRANDS SECTION */
+    .brands-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+    }
+
+  /*BRANDS SECTION END */
     
     
     
