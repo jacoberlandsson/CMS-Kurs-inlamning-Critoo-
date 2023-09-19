@@ -52,6 +52,8 @@ body {
     .footer-list-item {
         margin-bottom: 0.6rem;
         list-style-type: none;
+        color: white;
+        text-decoration: none;
         
     }
     
