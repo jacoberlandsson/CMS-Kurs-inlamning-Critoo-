@@ -405,6 +405,19 @@ body {
         top: 40px;
         
     }
+    
+    .navigation-link {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .navigation-link:hover {
+        color: grey;
+    }
+    
+    .navigation-link:active {
+        text-decoration: underline;
+    }
      /*NAVIGATION END */
     
     

@@ -16,17 +16,6 @@
 
  }
 
-@if (selection?.Length > 0)
-{
-    <ul>
-        @foreach (var item in selection)
-        {
-            <li class="@(item.IsAncestorOrSelf(Model) ? "current" : null)">
-                <a href="@item.Url(PublishedUrlProvider)">@item.Name</a>
-            </li>
-        }
-    </ul>
-}
 
 <section class="navigation-section">
       
@@ -54,10 +43,18 @@
        
         <div class="second-from-top">
             <div class="navigation">
-                <a>Home</a>
-                <a>Service</a>
-                <a>News</a>
-                <a>Contact</a>
+                <a class="navigation-link" href="@site.Url()">@site.Name</a>
+                
+                @if (selection?.Length > 0)
+{
+   
+        @foreach (var item in selection)
+        {
+         <a class="navigation-link" href="@item.Url(PublishedUrlProvider)">@item.Name</a>
+        }
+    
+}
+
                 <a class="login">Login</a>
             </div>
         </div>
