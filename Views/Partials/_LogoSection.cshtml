@@ -1,4 +1,6 @@
-﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
 
 <section class="brands-section">
     
@@ -7,7 +9,7 @@
         
         foreach(var entry in logoImages) 
         {
-            <img src="entry.MediaUrl()" alt="" />
+            <img src="@entry.MediaUrl()" alt="" />
         }
     }
      

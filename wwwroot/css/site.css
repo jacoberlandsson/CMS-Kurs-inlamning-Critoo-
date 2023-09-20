@@ -1,24 +1,8 @@
-body {
-    background-color: rgb(240, 239, 234);
-   }
-   
-   .wrapper {
-       height: 100dvh;
-       display: flex;
-       flex-direction: column;
-   }
-   
-   main {
-       flex: 1;
-   }
-   
-
-    /* FOOTER*/
-
-    .wrapper {
+    .showcase-wrapper {
         height: 100dvh;
         display: flex;
         flex-direction: column;
+        background-color: rgb(240, 239, 234);
     }
     
     main {
@@ -30,8 +14,7 @@ body {
     .footer {
         display: flex;
         background-color: black;
-        color: whitesmoke;
-        margin-top: 8rem;
+        color: white;
         width: 100%;
         padding-left: 10%;
         padding-right: 10%;
@@ -304,10 +287,12 @@ body {
     /*SHOWCASE, HERO */
     
     
+    
     .showcase {
         position: relative;
         margin-left: 10%;
         margin-right: 10%;
+       
     }
 
     .showcase > img {
@@ -566,6 +551,7 @@ body {
         flex-direction: row;
         justify-content: center;
         background-color: white;
+        margin: 3rem;
     }
 
   /*BRANDS SECTION END */
