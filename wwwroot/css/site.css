@@ -5,6 +5,12 @@
         background-color: rgb(240, 239, 234);
     }
     
+    .breadcrumb-wrapper {
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+    
     main {
         flex: 1;
     }
