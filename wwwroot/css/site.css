@@ -290,8 +290,8 @@
     
     .showcase {
         position: relative;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
        
     }
 
@@ -301,7 +301,6 @@
         position: absolute;
         right: 100px;
         top: 25px;
-        margin-bottom: 3rem;
     }
     
     
@@ -331,13 +330,14 @@
     .navigation-section {
         background-color: rgb(240, 239, 234);
         color: black;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
         
     }
 
     .nav-container {
         display: flex;
+        
     }
 
     .logo {
@@ -371,7 +371,7 @@
 
     .contact-company-social-media {
         position: absolute;
-        right: 120px;
+        right: 350px;
         top: 10px;
     }
 
@@ -386,7 +386,7 @@
         text-align: center;
         cursor: pointer;
         position: absolute;
-        right: 90px;
+        right: 320px;
         top: 40px;
         
     }
@@ -556,6 +556,32 @@
 
   /*BRANDS SECTION END */
     
+    /* BREADCRUMB SECTION */
+    
+    .breadcrumb-section {
+        background-color: rgb(240, 239, 234);
+        padding: 2rem;
+    }
+
+    .breadcrumb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-to-home {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .breadcrumb-redirect-to {
+        margin-right: 0.3rem;
+    }
+    
+    .breadcrumb-heading {
+        font-size: 3.5rem;
+    }
+    /* BREADCRUMB SECTION END*/
     
     
     
