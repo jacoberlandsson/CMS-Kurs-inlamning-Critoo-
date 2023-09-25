@@ -79,25 +79,47 @@ main {
 /* NEWSLETTER */
 .newsletter-wrapper {
     display: flex;
-    background-color: rgb(184, 198, 184);
+    background-color: rgb(240, 239, 234);
     height: 25vh;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
+.newsletter-heading {
+    font-weight: 600;
+    
+}
+
+.input-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .button {
+    height: 2.2rem;
+    width: 6rem;
     margin: 2rem;
-    background-color: goldenrod;
+    background-color: rgb(250, 215, 131);
     border-radius: 1rem;
-    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
     border: none;
+    font-size: 0.7rem;
 }
 
 .input {
+    height: 2.2rem;
+    width: 12rem;
     border-radius: 1rem;
-    padding: 0.3rem;
     border: none;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 
@@ -107,48 +129,145 @@ main {
 /* BLOG*/
 
 .blog-section {
-background-color: rgb(34, 19, 88);
+background-color: rgb(25, 25, 25);
+color: white;
 padding: 1rem;
 }
 
-
-.blog-wrapper {
-    background-color: rgb(34, 19, 88);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.blog-category {
+    color: orangered;
+    margin-left: 1rem;
 }
 
+.blog-wrapper {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog-heading-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+
+}
+
+.blog-link {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    font-size: 0.8rem;
+    font-weight: 450;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.blog-article {
+    margin: 1rem;
+    width: 30vw;
+}
+
+.blog-article > img {
+    width: 30vw;
+}
 
 /* BLOG END */
 
 /* TEAM MEMBERS*/
 
-.container-team {
+
+.team-section {
     background-color: rgb(241, 184, 105);
-    padding: 2rem;
+    padding: 3rem;
+}
+
+.container-team {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.team-category {
+    color: rgb(213, 38, 38);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.team-heading-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-link {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid black;
+    font-size: 0.8rem;
+    font-weight: 450;
+    text-decoration: none;
+    background-color: rgb(250, 215, 131);
+    color: black;
+    cursor: pointer;
 }
 
 .team-wrapper {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .team-member-img {
-   margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member-img > img {
+    width: 17.5vw;
+    margin-bottom: 1rem;
+}
+
+.team-member-info {
+    width: 17.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.team-member-info > h3 {
+    font-size: 1rem;
+}
+
+.team-member-info > span {
+    font-size: 0.85rem;
 }
 
 .review-wrapper {
     display: flex;
     justify-content: center;
-    margin: 2rem;
+  
 }
 
 .review {
-    width: 80%;
+    width: 85vw;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -159,21 +278,80 @@ padding: 1rem;
 .client-testimonial-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
 }
 
 .client-testimonial {
     width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+    margin: 1rem;
+}
+
+.review-stars-wrapper {
+    width: 20vw;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.review-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.author-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+
+}
+
+.review-image {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+
+.client-info-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.author-name {
+    font-size: 0.9rem;
+}
+
+.author-position {
+    font-size: 0.7rem;
+    color: rgb(213, 38, 38);
 }
 
 /* TEAM MEMBERS END*/
 
 /* PROJECTS*/
 
+.projects-section {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
 .topic-center {
     display: flex;
     justify-content: center;
+    color: orangered;
 }
 
 .heading-center {
@@ -187,37 +365,135 @@ padding: 1rem;
 }
 
 .projects-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 1rem;
 }
 
+.project {
+    width: 35vw;
+    margin: 1rem;
+}
 
+.project > img {
+    width: 35vw;
+}
 
 .project-title {
-    margin-bottom: 5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
+.project-link {
+width: 6rem;
+height: 2rem;
+padding: 0.5rem;
+text-decoration: none;
+border-radius: 1rem;
+font-size: 0.8rem;
+background-color: white;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.see-all-projects-link {
+    width: 10rem;
+    height: 2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(45, 45, 45);
+    border: 2px solid white;
+   
+}
+
+.see-all-projects-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
 /* PROJECTS END*/
 
 /* WHY CHOOSE US*/
 
-.why-choose-us-wrapper {
+.why-choose-us-section {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(34, 19, 88);
+}
+
+
+.why-choose-us-left-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.why-choose-us-category {
+    color: orangered;
+}
+
+.why-choose-us-heading {
+border-bottom: 3px solid silver;
+padding-top: 0.7rem;
+width: 20vw;
+line-height: 150%;
+}
+
+.why-choose-us-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.why-choose-us-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40vw;
 }
 
 .why-choose-us-img {
-    margin-right: 15rem;
+    width: 40vw;
+    position: absolute;
+    right: 200px;
+    top: 20px;
 }
 
 .why-choose-us-list {
     width: 30vw;
-    font-size: 2rem;
-    color: whitesmoke;
+}
+
+.why-choose-us-h4 {
+    font-size: 1rem;
+}
+
+.why-choose-us-p {
+    font-size: 0.8rem;
 }
 
 /* WHY CHOOSE US END*/
@@ -225,27 +501,65 @@ padding: 1rem;
 /*OUR SERVICE*/
 
 .services-section {
-    background-color: grey;
+    background-color: rgb(240, 239, 234);
     padding: 5rem;
-    
-    
+}
+
+.our-services-category {
+    color: rgb(213, 38, 38);
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.our-services-h2 {
+    margin-left: 1rem;
+    width: 30vw;
 }
 
 .our-services-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-   
 }
 
 .service-we-provide {
-    width: 15vw;
-    background-color: whitesmoke;
+    width: 17.5vw;
+    background-color: #ffffff;
     padding: 2rem;
     margin: 1rem;
+  
 }
 
+.service-h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service-p {
+    font-size: 0.75rem;
+    color: rgb(75, 72, 72);
+}
+
+.our-service-link-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.our-service-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid black;
+    color: black;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    cursor: pointer;
+}
 
 /*OUR SERVICE END*/
 
@@ -255,13 +569,36 @@ padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
 .about-us-description {
     width: 40vw;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-category {
+    color: orangered;
+}
+
+.about-us-h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-us-link {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 3rem;
+width: 10rem;
+border-radius: 2rem;
+background-color: rgb(25, 25, 25);
+color: white;
+text-decoration: none;
+margin-top: 2rem;
 }
 
 /*ABOUT US END*/
@@ -269,22 +606,46 @@ padding: 1rem;
 
 /*FEATURES*/
 
+.category {
+    color: rgb(213, 38, 38);
+}
+
 .features-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: (255, 255, 255);
+    background-color: #ffffff;
     color: black;
+    margin: 3rem;
+    
 }
 
 .features-headings {
     width: 20vw;
+}
 
+.feature-h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.features-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(250, 215, 129);
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .features-container {
 width: 40vw;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 .features {
@@ -332,6 +693,41 @@ display: flex;
     width: 30vw;
 }
 
+.showcase-get-consulting {
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: rgb(250, 215, 132);
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem;
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.showcase-learn-more {
+    width: 6rem;
+    border-radius: 1rem;
+    background-color: none;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.2rem;
+    position: absolute;
+    top: 320px;
+    left: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 /*SHOWCASE, HERO END*/
 
 
@@ -374,7 +770,9 @@ display: flex;
     margin: 3rem;
 }
 
-
+.navigation {
+    font-size: 0.9rem;
+}
 
 .navigation > a {
     margin: 1.5rem;
@@ -389,19 +787,23 @@ display: flex;
 
 
 .login {
-    padding: 0.7rem;
-    background-color: rgb(250, 215, 129);
-    color: black;
-    text-decoration: none;
-    border-radius: 20px;
-    height: 50px;
-    width: 75px;
-    text-align: center;
+    height: 2.2rem;
+    width: 6rem;
+    margin: 2rem;
+    background-color: rgb(250, 215, 131);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: none;
     cursor: pointer;
     position: absolute;
-    right: 210px;
+    right: 200px;
     top: 40px;
-    
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
 }
 
 .navigation-link {
@@ -592,12 +994,11 @@ display: flex;
 }
 
 .breadcrumb-heading {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 /* BREADCRUMB SECTION END*/
 
 
 
 /* ÖVRIGT*/
-
    
