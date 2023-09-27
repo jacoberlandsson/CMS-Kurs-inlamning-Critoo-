@@ -1089,6 +1089,12 @@ border-bottom: 1px solid rgb(172, 168, 168);
 
 .breadcrumb-redirect-to {
     margin-right: 0.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-redirect-to:hover {
+    text-decoration: underline;
 }
 
 .breadcrumb-heading {

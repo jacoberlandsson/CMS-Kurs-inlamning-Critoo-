@@ -19,8 +19,8 @@
              <p class="showcase-paragraph">
               @Model.Value("showcaseParagraph")
           </p>
-           <a class="showcase-get-consulting">Get Consulting</a>
-            <a class="showcase-learn-more">Learn More</a>
+           <a href="@Model.Value("showcaseButtonUrl")" class="showcase-get-consulting">@Model.Value("showcaseButtonText")</a>
+             <a href="@Model.Value("showcaseButtonUrl")" class="showcase-learn-more">@Model.Value("showcaseButtonText2")</a>
           </div>
         </div>
       </div>
