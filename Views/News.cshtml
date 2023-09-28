@@ -12,14 +12,14 @@
 	if(!int.TryParse(Context.Request.Query["page"], out pageNumber))
 	pageNumber = 1;
 	
-		var selection = Umbraco.Content(Guid.Parse("c9b3c64a-e44b-42d1-9e9f-c7e4fd87f995"))
-    .ChildrenOfType("newsPageArticleDetails")
-    .Where(x => x.IsVisible())
-    .OrderByDescending(x => x.CreateDate).ToList();
+	var selection = Umbraco?.Content(Guid.Parse("c9b3c64a-e44b-42d1-9e9f-c7e4fd87f995"))?
+        .ChildrenOfType("newsPageArticleDetails")?
+        .Where(x => x.IsVisible())
+        .OrderByDescending(x => x.CreateDate).ToList();
     
    
     var numberOfItems = selection?.Count() ?? 0;
-    var pagedItems = selection?.Skip((pageNumber - 1) * numberOfItems).Take(articlesPerPage);
+    var pagedItems = selection?.Skip((pageNumber - 1) * articlesPerPage).Take(articlesPerPage);
     
     
     
