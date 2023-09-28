@@ -863,6 +863,9 @@ width: 25vw;
 
 .news-h3 {
     font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .news-p {
