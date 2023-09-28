@@ -77,9 +77,17 @@
         </a>
         }
         
+        @for (int i = 1; 1 <= Math.Ceiling((decimal)numberOfItems / articlesPerPage); i++) 
+        {
+            if(i == pageNumber)
+            {
+                <a href="#" class="pagination-box active">@i</a>
+            } else
+            {
+                <a href="?page=@i" class="pagination-box">@i</a>
+            }
+        }
       
-        <a href="#" class="pagination-box active">1</a>
-        <a href="#" class="pagination-box">2</a>
         
         @if (pageNumber < Math.Ceiling((decimal)numberOfItems / articlesPerPage))
         {
