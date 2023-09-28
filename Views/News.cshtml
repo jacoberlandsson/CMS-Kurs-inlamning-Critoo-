@@ -5,6 +5,24 @@
 
 @{
 	Layout = "LayoutWithBreadcrumb.cshtml";
+	
+	var articlesPerPage = 6;
+	var pageNumber = 1;
+	
+	if(!int.TryParse(Context.Request.Query["page"], out pageNumber))
+	pageNumber = 1;
+	
+		var selection = Umbraco.Content(Guid.Parse("c9b3c64a-e44b-42d1-9e9f-c7e4fd87f995"))
+    .ChildrenOfType("newsPageArticleDetails")
+    .Where(x => x.IsVisible())
+    .OrderByDescending(x => x.CreateDate).ToList();
+    
+   
+    var numberOfItems = selection?.Count() ?? 0;
+    var pagedItems = selection?.Skip((pageNumber - 1) * numberOfItems).Take(articlesPerPage);
+    
+    
+    
 }
 
  <section class="news-section-wrapper">
@@ -14,17 +32,10 @@
     
     <div class="news-section">
       
-      
-@{
-	var selection = Umbraco.Content(Guid.Parse("c9b3c64a-e44b-42d1-9e9f-c7e4fd87f995"))
-    .ChildrenOfType("newsPageArticleDetails")
-    .Where(x => x.IsVisible())
-    .OrderByDescending(x => x.CreateDate).ToList();
-}
 
-        @if(selection != null)
+        @if(pagedItems != null)
         {
-            @foreach (var item in selection)
+            @foreach (var item in pagedItems)
             {
 
                 var url = item.Url();
@@ -52,9 +63,33 @@
 
             }
         }
-
-
-	
+    
      
     </div>
+    
+    
+    <nav class="item-pagination">
+        
+        @if(pageNumber > 1) 
+        {
+          <a href="?page=@(pageNumber - 1)" aria-hidden="true" class="pagination-arrow">
+            <span><i class="fa-sharp fa-solid fa-chevron-left"></i></span>
+        </a>
+        }
+        
+      
+        <a href="#" class="pagination-box active">1</a>
+        <a href="#" class="pagination-box">2</a>
+        
+        @if (pageNumber < Math.Ceiling((decimal)numberOfItems / articlesPerPage))
+        {
+        <a href="?page=@(pageNumber + 1)" aria-hidden="true" class="pagination-arrow">
+            <span><i class="fa-sharp fa-solid fa-chevron-right"></i></span>
+        </a>
+             
+        }
+        
+       
+    </nav>
+    
   </section>

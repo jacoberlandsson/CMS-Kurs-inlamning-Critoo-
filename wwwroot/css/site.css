@@ -1105,7 +1105,40 @@ border-bottom: 1px solid rgb(172, 168, 168);
 }
 /* BREADCRUMB SECTION END*/
 
+/*PAGINATION */
 
+.item-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-box {
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+}
+
+.pagination-arrow {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 3px;
+    cursor: pointer;
+    color: black;
+}
+
+.pagination-arrow:hover, .pagination-box:hover {
+    color: white;
+    background-color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+/*PAGINATION END */
 
 /* ÖVRIGT*/
    
