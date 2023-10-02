@@ -785,7 +785,14 @@ grid-template-columns: 1fr 1fr;
     top: 0;
 }
 
+.contact-traditional {
+    margin-right: 1rem;
+    color: black;
+}
 
+.nav-i {
+    margin-right: 5px;
+}
 
 .login {
     height: 2.2rem;
@@ -1047,6 +1054,25 @@ border-bottom: 1px solid rgb(172, 168, 168);
     margin: 1rem;
 }
 
+.contact-point-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-i {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+
+}
+
 .form-section-contact {
     display: flex;
     flex-direction: row;
@@ -1055,7 +1081,7 @@ border-bottom: 1px solid rgb(172, 168, 168);
 }
 
 .form-wrapper {
-    background-color: rgb(34, 19, 88);
+    background-color: rgb(240, 239, 234);
     width: 68vw;
     display: flex;
     flex-direction: column;
@@ -1084,6 +1110,14 @@ border-bottom: 1px solid rgb(172, 168, 168);
 .textarea-contact {
     height: 100px;
 }
+
+.contact-form-button {
+    width: 50vw;
+     background-color: rgb(250, 215, 132);
+     border-radius: 1rem;
+}
+
+
 /*CONTACT END*/
 
 
