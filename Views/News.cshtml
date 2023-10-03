@@ -6,7 +6,7 @@
 @{
 	Layout = "LayoutWithBreadcrumb.cshtml";
 	
-	var articlesPerPage = 6;
+	var articlesPerPage = 9;
 	var pageNumber = 1;
 	
 	if(!int.TryParse(Context.Request.Query["page"], out pageNumber))
@@ -91,3 +91,4 @@
   
     
   </section>
+  @await Html.PartialAsync("_NewsletterSection")

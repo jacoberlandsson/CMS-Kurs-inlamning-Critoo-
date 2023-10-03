@@ -438,11 +438,12 @@ cursor: pointer;
 .why-choose-us-section {
     background-color: rgb(255, 255, 255);
     color: black;
-    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 4rem;
+    padding-left: 8rem;
 }
 
 
@@ -476,14 +477,13 @@ line-height: 150%;
     flex-direction: row;
     justify-content: center;
     width: 40vw;
+    
 }
 
 .why-choose-us-img {
-    width: 40vw;
-    position: absolute;
-    right: 200px;
-    top: 20px;
+    width: 35vw;
 }
+
 
 .why-choose-us-list {
     width: 30vw;
@@ -498,6 +498,8 @@ line-height: 150%;
 }
 
 /* WHY CHOOSE US END*/
+
+
 
 /*OUR SERVICE*/
 
