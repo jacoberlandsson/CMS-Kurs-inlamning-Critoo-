@@ -135,8 +135,9 @@ padding: 1rem;
 }
 
 .blog-category {
-    color: orangered;
-    margin-left: 1rem;
+     color: rgb(213, 38, 38);
+    font-size: 0.8rem;
+    margin-left: 1.2rem;
 }
 
 .blog-wrapper {
@@ -161,7 +162,7 @@ padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 1.5px solid black;
     font-size: 0.8rem;
     font-weight: 450;
     text-decoration: none;
@@ -351,7 +352,8 @@ padding: 1rem;
 .topic-center {
     display: flex;
     justify-content: center;
-    color: orangered;
+    color: rgb(213, 38, 38);
+    font-size: 0.8rem;
 }
 
 .heading-center {
@@ -455,7 +457,9 @@ cursor: pointer;
 
 
 .why-choose-us-category {
-    color: orangered;
+    color: rgb(213, 38, 38);
+    font-size: 0.8rem;
+    
 }
 
 .why-choose-us-heading {
@@ -584,7 +588,8 @@ line-height: 150%;
 }
 
 .about-us-category {
-    color: orangered;
+    color: rgb(213, 38, 38);
+    font-size: 0.8rem;
 }
 
 .about-us-h2 {
@@ -612,6 +617,7 @@ margin-top: 2rem;
 
 .category {
     color: rgb(213, 38, 38);
+    font-size: 0.8rem;
 }
 
 .features-wrapper{
@@ -1184,6 +1190,13 @@ border-bottom: 1px solid rgb(172, 168, 168);
     align-items: center;
 }
 
+.item-pagination-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
 .pagination-box {
     border: 1px solid black;
     padding: 5px;
@@ -1209,6 +1222,16 @@ border-bottom: 1px solid rgb(172, 168, 168);
     background-color: black;
     color: white;
 }
+
+.active-dot {
+    color: black;
+}
+
+.pagination-dot {
+    font-size: 5rem;
+    text-decoration: none;
+}
+
 /*PAGINATION END */
 
 /* ÖVRIGT*/

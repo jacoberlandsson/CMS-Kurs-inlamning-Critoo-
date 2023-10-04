@@ -1,6 +1,24 @@
 ﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 
+@{
+    	var articlesPerPage = 3;
+	    var pageNumber = 1;
+	
+	if(!int.TryParse(Context.Request.Query["page"], out pageNumber))
+	pageNumber = 1;
+	
+	var selection = Umbraco?.Content(Guid.Parse("c9b3c64a-e44b-42d1-9e9f-c7e4fd87f995"))?
+        .ChildrenOfType("newsPageArticleDetails")?
+        .Where(x => x.IsVisible())
+        .OrderByDescending(x => x.CreateDate).ToList();
+    
+   
+    var numberOfItems = selection?.Count() ?? 0;
+    var pagedItems = selection?.Skip((pageNumber - 1) * articlesPerPage).Take(articlesPerPage);
 
+ }
+ 
+ 
  <section class="blog-section">
       <span class="blog-category">Article & News</span>
       <div class="blog-heading-link-wrapper">
@@ -9,56 +27,56 @@
       </div>
 
       <div class="blog-wrapper">
-         <div class="news">
-        <div class="news-publish-date-wrapper">
-          <div class="news-publish-date-day">25</div>
-          <div class="news-publish-date-month">Mar</div>
-        </div>
-        <img
-          src="static\how_to_use_digitalization.png"
-          alt="Picture of team member Mark"
-        />
-        <span class="news-category">Business</span>
-        <h3 class="news-h3">How to Use Digitalization In The Classroom</h3>
-        <p class="news-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum unde
-          velit quos suscipit impedit at.
-        </p>
-      </div>
+          
+            @if(pagedItems != null)
+        {
+            @foreach (var item in pagedItems)
+            {
+
+                var url = item.Url();
+                var date = item.CreateDate;
+                var image = item.Value<IPublishedContent>("articleImage");
+                var category = item.Value("articleCategory");
+                var title = item.Name();
+                var description = item.Value("articleDescription");
+
+          
+         
 
       <div class="news">
         <div class="news-publish-date-wrapper">
-          <div class="news-publish-date-day">25</div>
-          <div class="news-publish-date-month">Mar</div>
+         <div class="news-publish-date-day">@date.ToString("dd")</div>
+          <div class="news-publish-date-month">@date.ToString("MMM")</div>
         </div>
         <img
-          src="static\implement_chatgpt.png"
+          src="@image?.Url()"
           alt="News article"
         />
-        <span class="news-category">Business</span>
-        <h3 class="news-h3">How To Implement Chat GPT In Your Projects</h3>
+         <span class="news-category">@category</span>
+        <h3 class="news-h3">@title</h3>
         <p class="news-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias
-          eligendi molestias pariatur autem obcaecati!
+          @description
         </p>
       </div>
 
-      <div class="news">
-        <div class="news-publish-date-wrapper">
-          <div class="news-publish-date-day">25</div>
-          <div class="news-publish-date-month">Mar</div>
-        </div>
-        <img
-          src="static\the_guide_to_support.png"
-          alt="News article"
-        />
-        <span class="news-category">Business</span>
-        <h3 class="news-h3">The Guide To Support Modern CSS Design</h3>
-        <p class="news-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          repellendus sequi voluptatem facilis et fugiat?
-        </p>
+    }
+ 
+ }
       </div>
+      
+      
+      <nav class="item-pagination-blog">
+      
+        
+        @for(int i = 1; i <= Math.Ceiling((decimal)numberOfItems / articlesPerPage); i++)
+        {
+            if(i == pageNumber) { <a href="#" class="pagination-dot active-dot">.</a>}
+            else { <a href="?page=@i" class="pagination-dot">.</a>}
+        }
 
-      </div>
+        
+
+    </nav>
+  
+      
     </section>
