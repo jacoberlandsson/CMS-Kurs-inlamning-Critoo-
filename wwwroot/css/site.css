@@ -1069,6 +1069,9 @@ border-bottom: 1px solid rgb(172, 168, 168);
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact-point-icon {
@@ -1082,18 +1085,22 @@ border-bottom: 1px solid rgb(172, 168, 168);
     align-items: center;
 }
 
+
 .contact-i {
     border: 2px solid white;
     padding: 10px;
     border-radius: 50%;
     color: white;
+}
 
+.contact-point-p {
+    margin-bottom: 5px;
 }
 
 .form-section-contact {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -1102,7 +1109,6 @@ border-bottom: 1px solid rgb(172, 168, 168);
     width: 68vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 4rem;
     align-items: center;
     padding: 2rem;
@@ -1112,7 +1118,15 @@ border-bottom: 1px solid rgb(172, 168, 168);
     padding: 3rem;
 }
 
+.form-heading {
+    width: 20vw;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .input-contact, .textarea-contact {
     width: 50vw;
@@ -1132,6 +1146,7 @@ border-bottom: 1px solid rgb(172, 168, 168);
     width: 50vw;
      background-color: rgb(250, 215, 132);
      border-radius: 1rem;
+     margin-top: 1rem;
 }
 
 

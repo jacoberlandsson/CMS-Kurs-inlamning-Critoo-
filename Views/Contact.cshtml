@@ -12,31 +12,39 @@
       <div class="contact-wrapper">
        <div class="contact-point">
         <div class="contact-point-icon"><i class="fa-solid fa-location-dot contact-i"></i></div>
-        <h4>Visit us</h4>
+        <div class="info-contact-point">
+            <h4>Visit us</h4>
         <p class="contact-point-p">Sveavägen 31</p>
-        <p class="contact-point-p">111 34</p>
+        <p class="contact-point-p">111 34 STOCKHOLM</p>
+        </div>
+        
        </div>
 
        <div class="contact-point">
         <div class="contact-point-icon"><i class="fa-solid fa-phone-volume contact-i"></i></div>
+        <div class="info-contact-point">
         <h4>Call us</h4>
         <p  class="contact-point-p">+46 (8) 121 470 50</p>
         <p class="contact-point-p">+46 (8) 121 470 51</p>
+        </div>
        </div>
 
        <div class="contact-point">
         <div class="contact-point-icon"><i class="fa-solid fa-envelope contact-i"></i></div>
+        <div class="info-contact-point">
         <h4>Email us</h4>
         <p class="contact-point-p">info@crito.com</p>
         <p class="contact-point-p">support@crito.com</p>
+        </div>
        </div>
       </div>
     </section>
     
     <section class="form-section-contact">
       <div class="form-wrapper">
-        <h3 class="form-heading">Leave us a message</h3>
+        <h3 class="form-heading">Leave us a message for any information.</h3>
         
+        <div class="form-container">
         @using (Html.BeginUmbracoForm("Index", "Contact", FormMethod.Post))
         {
             <div asp-validation-summary="All"> </div>
@@ -57,7 +65,7 @@
            
         }
 
-          
+          </div>
            
           
         
